@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Lar Imobiliária - Encontre o imóvel dos seus sonhos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://i.ibb.co/3s3M5Nq/elefante.png" alt="Mascote elefante da Meu Lar Imobiliária">
+        <h1>Meu Lar</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#imoveis">Imóveis</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="acessibilidade">
+        <button id="aumentar-fonte">A+</button>
+        <button id="diminuir-fonte">A-</button>
+        <button id="alto-contraste">Alto Contraste</button>
+        <button id="leitura-tela">Leitura de Tela</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>Encontre o imóvel dos seus sonhos com a Meu Lar</h2>
+        <p>A imobiliária que se preocupa com você e com a sua família.</p>
+        <form>
+          <label for="tipo">Tipo de imóvel:</label>
+          <select id="tipo" name="tipo">
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="terreno">Terreno</option>
+          </select>
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" placeholder="Ex: Moema">
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="imoveis" class="destaques">
+      <div class="container">
+        <h2>Imóveis em destaque</h2>
+        <div class="lista-imoveis">
+          <article class="imovel">
+            <img src="https://via.placeholder.com/300x200" alt="Foto de uma casa para venda">
+            <h3>Casa no Jardim Europa</h3>
+            <p>4 quartos, 2 suítes, 3 banheiros, 2 vagas de garagem</p>
+            <span class="preco">R$ 1.500.000,00</span>
+            <a href="#">Ver detalhes</a>
+          </article>
+          <article class="imovel">
+            <img src="https://via.placeholder.com/300x200" alt="Foto de um apartamento para aluguel">
+            <h3>Apartamento no Centro</h3>
+            <p>2 quartos, 1 suíte, 1 banheiro, 1 vaga de garagem</p>
+            <span class="preco">R$ 3.000,00/mês</span>
+            <a href="#">Ver detalhes</a>
+          </article>
+          <article class="imovel">
+            <img src="https://via.placeholder.com/300x200" alt="Foto de um terreno para venda">
+            <h3>Terreno na Granja Viana</h3>
+            <p>1.000 m², aclive suave, vista panorâmica</p>
+            <span class="preco">R$ 500.000,00</span>
+            <a href="#">Ver detalhes</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <div class="lista-servicos">
+          <div class="servico">
+            <img src="https://via.placeholder.com/100x100" alt="Ícone de venda de imóveis">
+            <h3>Venda</h3>
+            <p>Ajudamos você a vender seu imóvel de forma rápida e segura.</p>
+          </div>
+          <div class="servico">
+            <img src="https://via.placeholder.com/100x100" alt="Ícone de aluguel de imóveis">
+            <h3>Aluguel</h3>
+            <p>Encontre o imóvel ideal para alugar com a nossa assessoria.</p>
+          </div>
+          <div class="servico">
+            <img src="https://via.placeholder.com/100x100" alt="Ícone de avaliação de imóveis">
+            <h3>Avaliação</h3>
+            <p>Oferecemos avaliações precisas e justas do seu imóvel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Entre em contato</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Meu Lar Imobiliária. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
