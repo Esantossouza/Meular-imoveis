@@ -1,4 +1,3 @@
-/* Cores */
 :root {
   --azul-escuro: #000080;
   --azul-marinho: #0000CD;
@@ -6,240 +5,161 @@
   --branco: #FFFFFF;
 }
 
-/* Estilos gerais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: var(--branco);
   color: var(--azul-escuro);
+  font-size: 16px;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 /* Header */
 header {
   background-color: var(--azul-escuro);
   color: var(--branco);
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
-header .container {
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.logo h1 {
-  font-size: 24px;
-  margin: 0;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-nav li {
-  display: inline;
-  margin-left: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
-  text-decoration: none;
   color: var(--branco);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .acessibilidade button {
-  background-color: var(--branco);
+  background-color: var(--azul-bebe);
   color: var(--azul-escuro);
   border: none;
-  padding: 5px 10px;
+  padding: 6px 12px;
   cursor: pointer;
-  margin-left: 10px;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
-/* Hero */
+/* Centralização do Slogan e Mascote */
 .hero {
   background-color: var(--azul-bebe);
-  padding: 50px 0;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.hero form {
+  padding: 60px 0;
+  min-height: 50vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.hero label {
-  margin-top: 10px;
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
-.hero select, .hero input {
-  padding: 5px;
+.mascote-elefante {
+  margin-bottom: 10px;
+}
+
+.slogan-principal {
+  font-size: 48px;
+  color: var(--azul-escuro);
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitulo-slogan {
+  font-size: 20px;
+  color: var(--azul-marinho);
+  margin-bottom: 30px;
+}
+
+.busca-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: var(--branco);
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.busca-form input, .busca-form select {
+  padding: 8px;
   border: 1px solid var(--azul-escuro);
-  margin-top: 5px;
+  border-radius: 4px;
 }
 
-.hero button {
+.busca-form button {
   background-color: var(--azul-escuro);
   color: var(--branco);
   border: none;
-  padding: 10px 20px;
+  padding: 9px 20px;
   cursor: pointer;
-  margin-top: 20px;
+  border-radius: 4px;
 }
 
 /* Destaques */
 .destaques {
-  padding: 50px 0;
-}
-
-.destaques h2 {
+  padding: 40px 0;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .lista-imoveis {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.imovel {
-  width: 300px;
-  background-color: var(--branco);
-  border: 1px solid #CCCCCC;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.imovel img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.imovel h3 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.imovel p {
-  font-size: 14px;
-  color: #666666;
-}
-
-.imovel .preco {
-  font-weight: bold;
-  color: var(--azul-marinho);
-}
-
-.imovel a {
-  display: block;
-  background-color: var(--azul-escuro);
-  color: var(--branco);
-  text-align: center;
-  text-decoration: none;
-  padding: 5px 0;
-  margin-top: 10px;
-}
-
-/* Serviços */
-.servicos {
-  background-color: var(--azul-bebe);
-  padding: 50px 0;
-}
-
-.servicos h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.lista-servicos {
-  display: flex;
-  justify-content: space-between;
-}
-
-.servico {
-  width: 250px;
-  text-align: center;
-}
-
-.servico img {
-  width: 100px;
-  height: 100px;
-}
-
-/* Contato */
-.contato {
-  padding: 50px 0;
-}
-
-.contato h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.contato form {
-  width: 500px;
-  margin: 0 auto;
-}
-
-.contato label {
-  display: block;
-  margin-top: 10px;
-}
-
-.contato input, .contato textarea {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid var(--azul-escuro);
-  margin-top: 5px;
-}
-
-.contato button {
-  background-color: var(--azul-escuro);
-  color: var(--branco);
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  gap: 20px;
+  justify-content: center;
   margin-top: 20px;
 }
 
-/* Footer */
-footer {
-  background-color: var(--azul-escuro);
-  color: var(--branco);
-  padding: 20px 0;
-  text-align: center;
+.imovel {
+  border: 2px solid var(--azul-bebe);
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
 }
 
-/* Alto Contraste */
-.alto-contraste {
-  --azul-escuro: #FFFFFF;
-  --azul-marinho: #FFFFFF;
-  --azul-bebe: #000000;
-  --branco: #000000;
+.preco {
+  display: block;
+  font-weight: bold;
+  color: var(--azul-marinho);
+  margin-top: 10px;
+}
+
+/* Modos de Acessibilidade Visual */
+body.alto-contraste {
+  background-color: #000000 !important;
+  color: #FFFF00 !important;
+}
+
+body.alto-contraste header,
+body.alto-contraste .hero,
+body.alto-contraste .busca-form {
+  background-color: #000000 !important;
+  border: 1px solid #FFFF00;
+}
+
+body.alto-contraste a,
+body.alto-contraste h1,
+body.alto-contraste p,
+body.alto-contraste label {
+  color: #FFFF00 !important;
 }
